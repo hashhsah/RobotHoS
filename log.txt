@@ -1,0 +1,501 @@
+============== 中国农业银行 ===========
+calling: ./robot-detect --csv -p 443 perbank.abchina.com
+retcode: 1
+Scanning host perbank.abchina.com ip 124.74.251.169 port 443
+
+RSA N: 0xd9228e7a5155b57b6723a829cdbabf6f4ed84cd18ecc9bc5172f5c9721eb9a188ff2e43aaf33a70410f9196a77eb8337a9fba36b6052364c86002388a4c79da32c2e4ff2ffbfa14cd383c79a6fc85fbb45ca3fe191ff2f65fec7e50c95ac52163bdb59aef0c462f4477fa3987e6b0105f5789653ce84f1011ecf88530c0027886f8e9575b8d41266e64b61d40eb1f553ba6fee09357ed1bda66ef7e3b397d0654636636255f1fa9c8eabbcb6aebc7de8ed02ef0fedd29dfd036fa3dd325d80bcd509930e8da56afce4f9a548566a10e5cbbf8aba81c8ca0788676ae1126130084ac985e19db9b09b4046e9a4a79d570c75579d7590d1743c733aa1607713a983
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 40 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 中国银行 ===========
+calling: ./robot-detect --csv -p 443 ebsnew.boc.cn
+retcode: 0
+Scanning host ebsnew.boc.cn ip 219.141.191.151 port 443
+
+RSA N: 0xe1a1753b80b9249daccd2c32f036504bdea16d5319350881800f17efc16cc5daadaa30730773c36597a5fd1970b14d4f6d3bc7bef67c652476d93741e2cb48320a2d43604f73ec5738a69824a6e9b81aae2b11a6cb13e328adc5fcb209ee8116681118c79d8db75330a39f85d6edc7f2972ac5d1ab603e4fb600d86a830b893eaddfda92ae2c0b8a2d465bc2a7143c3dadc70f4b538f9a51c4da94d56b109c5b2a7c9ce557d30c9c0ec866de2861a65183d7dd8060249f7d1e1d2ef8ec4ad923ae47c95653154496db5aec9e215c10da10d2f9e22ab5858c352a87ce6c480b97f38ce3af9cd979df38cdeeadb981c2ff35a096001968a9e79d2dd3c81b85edf1
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Getting inconsistent results, aborting.
+
+============== 交通银行  ===========
+calling: ./robot-detect --csv -p 443 www.95559.com.cn
+retcode: 0
+Scanning host www.95559.com.cn ip 124.74.244.2 port 443
+
+Cannot connect to server: timed out
+
+There seems to be no TLS on this host/port.
+
+============== 中信银行  ===========
+calling: ./robot-detect --csv -p 443 i.bank.ecitic.com
+retcode: 1
+Scanning host i.bank.ecitic.com ip 219.142.124.142 port 443
+
+RSA N: 0xbd9ab7974b642815bed34687af62f2ef53c22d83d6695976a5ac150fa30de574478ee8e86310e5c8dff0e0f4566d8bfef76b9d01dee36915d360c4e11261fa302378faef1a200f6dbc6291cbfabe17cf6c48cd775deaeb99a24f9f4eb8e907a0179b75474319b858a5c9def3296b2e13ca3b5ed3eae80919910d383de6d224f29e92343e74677ba163455ad84aec284be2b7ae7faa774872cf45f63a32fbb173579be7b58271bc663491111e3f5541e09c9d29ac519264958e3849f3726ceadca049d75ff120aedfc43dc7d21656bf230cdd9233991232aa2fbd10255d758e0adc613e74c0fbab42d3ccbb34398598f15eeed45035c2bbda9a5fb0fc528be74f
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 40 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 光大银行 ===========
+calling: ./robot-detect --csv -p 443 www.cebbank.com
+retcode: 0
+Scanning host www.cebbank.com ip 106.37.164.153 port 443
+
+RSA N: 0xb375c3be19c9a6b82652ab47320b30b3103385a8d60e6cb3658c111b3bc4293c12b9d8f061b80fb7109967d1d5aa210bcaa6ad30c00fd28dde89a5df9f9ac248a692f91d9600d1d1d3dc30564e696bf4eb0c8c0aecd07b655e767b0a489a2eb336a991302cdf924818515beb883cf1dc4b9a5883c092ab92c1562f150c7073d9c5f0d161e16da08a559fd5352ef9e7f623cb696a49ca84c02522c4f160a1b66845820718da53ca6a6ae933cf66cbe5efed0f03f61668cce8d2eb40ea7cdf764a34068a9cc3b3e39c2e8a064889c6705f4d3c0c7af242a873172e6c6064562daffc8e0839909ac5c3f7a2b725be0dffec996688b712982ca7a60ecdbb2346d301
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+The oracle is weak, the attack would take too long
+
+Result of good request:                        TLS alert 20 of length 7
+
+Result of bad request 1 (wrong first bytes):   ConnectionResetError
+
+Result of bad request 2 (wrong 0x00 position): ConnectionResetError
+
+Result of bad request 3 (missing 0x00):        ConnectionResetError
+
+Result of bad request 4 (bad TLS version):     TLS alert 20 of length 7
+
+============== 中国建设银行 ===========
+calling: ./robot-detect --csv -p 443 ibsbjstar.ccb.com.cn
+retcode: 1
+Scanning host ibsbjstar.ccb.com.cn ip 106.37.204.150 port 443
+
+RSA N: 0xe50bbbe02a19a62ab790e6cb0d928f873f0ebff67ad62556a2124406f32a269b39d4b52150076b2853169de1e449a9a50043845e1bbb02f1b5497d0f8dcea394569b84e624c02da9a688269b11e5417222a64741987ddc608e66a58599e1922dfa9477939d50675ba3eb341c19cce651447d0175cb2828981de3f5cbdb428b82046f74e1221b51cd77984101a9c0313098bf27fc3e02ca878f42b4decaa3c31780bfe3386731459fe652d57f9328c1910899108b996f73a97027d2354c4720e3b6e633df80052bd62ffde24c1b606ff127243380932e4d8593e68436ff03155642c60b3c6938386d40648641971f0af06ca19c46bcfff1a4b86aaa38d65d0c49
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 40 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 华夏银行 ===========
+calling: ./robot-detect --csv -p 443 sbank.hxb.com.cn
+retcode: 0
+Scanning host sbank.hxb.com.cn ip 58.210.177.133 port 443
+
+RSA N: 0xe45cfc459aa079c531837535f3457a9fbd3c696fe51ed1d0e2c3d0c4c54a89d809c324068b7187073d9edfadb7d505e8fbc6f976d74bf3db034ae204bad712ea5dd6d879b4d4052d114dd49e0972e28fdd23ac1f5b25d3f2974c7af6aaf41d2149822860bd180bc9b57211c3535c6d0ac3baf534a0d6d394d0e6ed6ea0f98e5cf1f2f61bbc9fb2cc4bfb50d26d51ce23f95bfc55202340301243aa1f3d56b294a951a062dd9571423e5382c9e6f085237d65fe272e70f3f6a0149c37496dada8b50153a8e4f70b24c622275ad80166c71a1468bff1726030ce2cec9792fd6f20dc6b9ff5de9ac215e7fba91d32fd2136f4117c916d899ab61a4ed8a048662879
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+The oracle is strong, real attack is possible
+
+Result of good request:                        TLS alert 20 of length 7
+
+Result of bad request 1 (wrong first bytes):   ConnectionResetError
+
+Result of bad request 2 (wrong 0x00 position): TLS alert 20 of length 7
+
+Result of bad request 3 (missing 0x00):        ConnectionResetError
+
+Result of bad request 4 (bad TLS version):     TLS alert 20 of length 7
+
+============== 中国工商银行 ===========
+calling: ./robot-detect --csv -p 443 mybank.icbc.com.cn
+retcode: 1
+Scanning host mybank.icbc.com.cn ip 61.129.111.44 port 443
+
+RSA N: 0x9a2c04774c0a0b10a829ae9a201ae9e16ca1cb913f8209f3f83e161d06d776a3ac1cd6fbafd0b2c753c98299c6da99b08f5b1e06fb52843b115e80f4760466e1e36948289130fb870d5af23fbb860e7442dfbdc798bb46ee0ae65eca17d143fe270e04aa668d9ab0ee86ae7d02ca0213b8d456e0ea804f060f99a1fd069e41ce37e89790a8cf5b751a988131789b77c9110fc9051dd74d19c00626045c3a47f91cb995003415703bc55a3cfbdfdc40b37f7f065bdbe9c810de385e712d3519424d0835c79c229bab724a702564a0677dcd33c9b432634fe2f69edef390437df2ec6a73c34c4ee27b0150be40c29f5f0580b9abe51de3ea87da89f6af417fc78b
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 40 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 大连银行 ===========
+calling: ./robot-detect --csv -p 443 ibank.bankofdl.com
+retcode: 0
+Scanning host ibank.bankofdl.com ip 59.46.191.34 port 443
+
+RSA N: 0xa3a493e0d7b1fff0174c620b52f8df13429bdbe9520f2b1fcd0ae37e804ea48993187683941705a6e19311fbed59d99c543dad1c03f2dde7628ffcb1d50e4bc7d20bc513de65e8647423f2f76d14a37705e690fbc9da2733fa3508017953033fc316c8304d6a273dcbe469f33266677a674520c7a669d7bb11e165d2176d2b9774afbbfcb0b51ce8b35f93e824539e530cd193fe6e89d75c22f54e8ff216c1f9243a9df1659a0705233c6934950e4e9e4148c9b4971dc1f04991f0d837475df98eec0b41dbefd0ae33370aefac9189c7e497ed68e7f2720aa5ae30c06292e63b98a276bf3965a28287714fc8e941c068922c6476f42e65a461c64b8e99790add
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+The oracle is strong, real attack is possible
+
+Result of good request:                        TLS alert 20 of length 7
+
+Result of bad request 1 (wrong first bytes):   ConnectionResetError
+
+Result of bad request 2 (wrong 0x00 position): TLS alert 20 of length 7
+
+Result of bad request 3 (missing 0x00):        ConnectionResetError
+
+Result of bad request 4 (bad TLS version):     TLS alert 20 of length 7
+
+============== 北京银行 ===========
+calling: ./robot-detect --csv -p 443 ebank.bankofbeijing.com.cn
+retcode: 0
+Scanning host ebank.bankofbeijing.com.cn ip 124.89.10.41 port 443
+
+Cannot connect to server: [SSL: UNSUPPORTED_PROTOCOL] unsupported protocol (_ssl.c:777)
+
+Server does not seem to allow connections with TLS_RSA (this is ideal).
+
+============== 渤海银行 ===========
+calling: ./robot-detect --csv -p 443 ebank.cbhb.com.cn
+retcode: 1
+Scanning host ebank.cbhb.com.cn ip 221.238.57.199 port 443
+
+RSA N: 0xf401416eecd47e48d63bf8119cbbf280eb78e0310733534c9a25f8067c89e752c5644cfd24e465c4fcf2e244bce5816a5b24cbea7baeeb5a0c968b4efa878dd7c75f530cf2601609cde4d545a4df57d77d049c3c91f0f95ded3c60dcb02afd1345e521980552e48127050f9e0cf6bf5cace021dd2e588d4ed4bdddb8a8019ce18cb7c7890461e6feff9ef10c2a2cc0d9fc157577e90caaca23612267f6d7c5e9a73bf3cbbf4ecb08175edc2546c29db6985e63b7462de1cd4a08a0eca27b0c523ce25460c9f4c5c839f9f2b7d2c418856c811efa81ce868a01a18a07dd6b654ced83802899a501a6eb637f4dadd9de0916c583b655a52dac1962ae1321c9c1bd
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 40 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 盛京银行 ===========
+calling: ./robot-detect --csv -p 16443 newperson.shengjingbank.com.cn
+retcode: 0
+Scanning host newperson.shengjingbank.com.cn ip 59.46.94.53 port 16443
+
+RSA N: 0xc717c646407169ecadc15f6b07c427a58f325cb96990f5330818a0d222dc6f25c53f08c60e48808bcbc146bf090719d103440c126e4c0afed831aad0192b15cb545e1da3d1a86112b15215879be1ce03174cc603d79b98bb0cf33eb06df807da68a7f6de80055caa0d48693f3ffd171b50e40206d2c24dfee31ddf6a1b7b9649171e7de698ca6aad6743b2b6b8e7b7f373364486d2077b7ed3220d450c375f7101e0e18cc23be9e86507d0aaf3edb46698c22175e0691d92237ce834c473dd9913eacee2cd2eee52993517aee1aacb0912e5f17ad4b7a2351de2fc2279ba58da7c95b219ecc37b44d4a12d73d87ba345e651263805ad4083dc7be3c01665be1f
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+The oracle is weak, the attack would take too long
+
+Result of good request:                        TLS alert 20 of length 7
+
+Result of bad request 1 (wrong first bytes):   ConnectionResetError
+
+Result of bad request 2 (wrong 0x00 position): ConnectionResetError
+
+Result of bad request 3 (missing 0x00):        ConnectionResetError
+
+Result of bad request 4 (bad TLS version):     TLS alert 20 of length 7
+
+============== 吉林银行 ===========
+calling: ./robot-detect --csv -p 443 netbank.jlbank.com.cn
+retcode: 0
+Scanning host netbank.jlbank.com.cn ip 124.235.208.199 port 443
+
+RSA N: 0xa39f302500040624fc906e8034e09f7275643d37444f0f4b46cdb49a435635ad2aded063dd59393908006d21b88c6a11bfe30fce638126e80a453e276f0bdd3f002b3ab4b2294044aefcb703d884d137343685e64b6f1b23fa0f2510e207990dd856ad95b7674a217ef8baa63d033e8bfe972fa95faf948e29e7a6f0b44a7359070b66d3ee082b138fbbcb964e5f8ca3f5f5fb4ca9cd9929fa0e4a6b2cb8ceced79e69409fe5481213516595d02ef518d6d38b576c8c8fd857cd6a569079d217afcd56ed0e49668d6901a676ee804672dc3ffb4ef61f53158fc9e5557168589e03e9b42b3dcd1c62ae360fb91d9d96348e5b9631df46db48fc5b76ec16474cc3
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (ConnectionResetError), retrying with changed messageflow
+
+The oracle is strong, real attack is possible
+
+Result of good request:                        Timeout waiting for alert
+
+Result of bad request 1 (wrong first bytes):   ConnectionResetError
+
+Result of bad request 2 (wrong 0x00 position): Timeout waiting for alert
+
+Result of bad request 3 (missing 0x00):        ConnectionResetError
+
+Result of bad request 4 (bad TLS version):     Timeout waiting for alert
+
+============== 哈尔滨银行 ===========
+calling: ./robot-detect --csv -p 443 ibank.hrbb.com.cn
+retcode: 0
+Scanning host ibank.hrbb.com.cn ip 222.171.250.196 port 443
+
+RSA N: 0x96b907d85f348d2078ff2befd7c4dc23ab3f61afd2a9f29631f63afffcff65b1dd56ed4784cc99b79e4a33c7ffb09a8ca63a4d7605f06ade676c20bb1f1bf1503cc51ca346a79128bd34b8ece90f84fa2ee953a75ba69573f4ddc36ee1ff004ca2c243ee372e0a5758d2235544e7241b1d8edb33e0cfd7f7bd82a32b8800a3d841376f612338417a928e7d39f886232cd48f4c016a538cbdd1baba413044b01665f04188b2de113f8f3d9643b1d50d70b6de51a007689f48686c840c6eba199b062af0c08d896b96296fc19cd61e822764cdc11a0201b409a21af981b0c1bb60f4992a31d7843a315d6d6cbda7404f2992ca29f97db90837f69217adbe3431d5
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+The oracle is strong, real attack is possible
+
+Result of good request:                        TLS alert 20 of length 7
+
+Result of bad request 1 (wrong first bytes):   ConnectionResetError
+
+Result of bad request 2 (wrong 0x00 position): TLS alert 20 of length 7
+
+Result of bad request 3 (missing 0x00):        ConnectionResetError
+
+Result of bad request 4 (bad TLS version):     TLS alert 20 of length 7
+
+============== 兴业银行 ===========
+calling: ./robot-detect --csv -p 443 personalbank.cib.com.cn
+retcode: 1
+Scanning host personalbank.cib.com.cn ip 218.66.47.198 port 443
+
+RSA N: 0xe48f9cbdeb00bccbc8075fc100f3e8e11298a14cf2a4007f23e9c00d27316edb9fe57c0b21e143fce6df5e3bf0c6f01a6b36c275c29756c97630b4e8c25a1680a9aa38b8421dc388608cce0dd31ef7142816f8ba4f21feddb30095b072057303293cc641c7c5b201eb288821c5dd2e10d87e512834a95142c936c4558edc104d2de00f3f71eda2128f85bab094ddaf7f0a7193f29e1ca3167127e8c9f92a9251f41747f9cbd08357e3cce5539238e59b3b3539b869e879ad8412044bffc44bde2d0789fa209f19a8ca919e83bd2f7acf92e3f0edf9b15cde92693a47c21f93934bd9786f2c7cc1286a7532aea3ce6a62309680233237b9fddd826d8e04097fd5
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 20 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 广发银行 ===========
+calling: ./robot-detect --csv -p 443 ebanks.cgbchina.com.cn
+retcode: 0
+Scanning host ebanks.cgbchina.com.cn ip 113.108.153.42 port 443
+
+RSA N: 0xcd2ba09fdb5a78a6e7709b26d6518b799cd0fcde5487fde0da0994a786960c7747a69018e7a676c4fcf99fdb65d0a582480600b3d2f4df2d9f632922f0b86462b1efa93da73623ec64f9f70f65d67e1eecd5c189484d9059cd87fac35d5773b5c2fc251bd3fffe4ce98ca6bf6bd95dda5bf4b8e28f16b42b5d85c6ed3fa8c6d46eeb1c05132be55b5a66818e22ca24c4c18fa7e32b69949cea91c3d8c46c80149f8f9d60b08c46306314820b678dd5d0832a281589cfe6fa14e3018b93f52e045e441ed2f80a80b007c86c58312e10607eb76599615b2297326aab203351defbf71c4a4c6e6d0e3e4cc9ee1632c78ae67c95b803d30f9b5b5dad1e6b30c137c5
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 40 of length 7), retrying with changed messageflow
+
+The oracle is weak, the attack would take too long
+
+Result of good request:                        Timeout waiting for alert
+
+Result of bad request 1 (wrong first bytes):   TLS alert 40 of length 7
+
+Result of bad request 2 (wrong 0x00 position): TLS alert 40 of length 7
+
+Result of bad request 3 (missing 0x00):        TLS alert 40 of length 7
+
+Result of bad request 4 (bad TLS version):     TLS alert 40 of length 7
+
+============== 宁波银行 ===========
+calling: ./robot-detect --csv -p 443 e.nbcb.com.cn
+retcode: 0
+Scanning host e.nbcb.com.cn ip 61.164.72.169 port 443
+
+RSA N: 0xaf0f54ae6657c9efda4cb662381ea170ed442e280859e0344c165c1355c64bf89cdc8a952b3917f345435668f07e6c739af857ebd11b01b966c6ec635fcc98aae410b20f246564ec192bb260a4bc74a524b61556063eed93d7f3f733330cd669a00cc525b77b68068e06e7c92de1b6df773196cea5258e55f1ab536f1a1edb2678d6fd1491866018f4ed9078ef64ec27ea2921b96252b2b20ab1952274eeee74b47d85711564eaa3001b185597a322a318dbe555980910df7c2914f11f294c71e9938c39faa1f008d2fbf11c071dea17c7a86e34bba80b2238ae8ba42afe9ba04f981ec569d1aab969d7f1d7274777e4f44df36b344eb8489154a2ca4126c5c9
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (ConnectionResetError), retrying with changed messageflow
+
+The oracle is strong, real attack is possible
+
+Result of good request:                        Timeout waiting for alert
+
+Result of bad request 1 (wrong first bytes):   ConnectionResetError
+
+Result of bad request 2 (wrong 0x00 position): Timeout waiting for alert
+
+Result of bad request 3 (missing 0x00):        ConnectionResetError
+
+Result of bad request 4 (bad TLS version):     Timeout waiting for alert
+
+============== 浦发银行 ===========
+calling: ./robot-detect --csv -p 443 ebank.spdb.com.cn
+retcode: 0
+Scanning host ebank.spdb.com.cn ip 60.173.223.199 port 443
+
+RSA N: 0xb54388c82a7d1981328d3ad4beb8189336971b4afbcb5aa93bb321559c3557119759e60c7f48b70938296fe89a81c88795592b2553a7533cf6bf71c98f2c0d56b95005ccb77e3aef40eccc39e49cd62836e230e8f3f4ae6b93817a1ab540a1e7c19e5bd2fdd8deeda7f18c16b9c546ab55b0305d6dbf87a2985d631da230bda5d29f5539045a7adec95fc257231fc8731f69f311c6ef35de8e4c92acf05b1e13c0738c43c66ac39eea4ade1ee35f9fb4173dad3bb644587d44cac160ea84ad5cb6f85cca8a4c8667fb9d7d28104ce93ba8eaebb971f58fc05a60122787b3af274e70f75de095b44b7f001910a61668410626d71264b19403f7c635cc6db0fc07
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (ConnectionResetError), retrying with changed messageflow
+
+The oracle is strong, real attack is possible
+
+Result of good request:                        Timeout waiting for alert
+
+Result of bad request 1 (wrong first bytes):   ConnectionResetError
+
+Result of bad request 2 (wrong 0x00 position): Timeout waiting for alert
+
+Result of bad request 3 (missing 0x00):        ConnectionResetError
+
+Result of bad request 4 (bad TLS version):     Timeout waiting for alert
+
+============== 浙江泰隆商业银行 ===========
+calling: ./robot-detect --csv -p 443 ebank.zjtlcb.com
+retcode: 1
+Scanning host ebank.zjtlcb.com ip 122.226.149.198 port 443
+
+RSA N: 0xaaac5b6ba715d13d7b397a65139ba8159ab60b39ce21f8612407a8e17f723d60dd01cc651fadc6465fc2eef230a939b421f8a7d2676e334cc810e9ddb7bcb5f348f7c3e4be2e44729dac3b19c0cd388d12e9a200a7e111bb2684e24c42b5267a9b8ce9b0127420d48dde2e2b8dc26e5d8f668c907e31073260c2d7058ed0c8c3e2202df25b9363d8c64765f82466e1c9b9a78687b9883633d54ad0a3e41c5f3fe1f26effdbcafd9bc9bb20f88db0a648b9b70f21728f4bf7450baf505eb5319dffc3555c6ef2b27c8e3158c74d64b4c08263be040f95a5112124626643983eed3278bb5db42b3689a5278320051401c9647fb6f0eee7b2b7449d75790a07b30f
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 20 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 招商银行 ===========
+calling: ./robot-detect --csv -p 443 pbsz.ebank.cmbchina.com
+retcode: 1
+Scanning host pbsz.ebank.cmbchina.com ip 180.168.0.58 port 443
+
+RSA N: 0xb3af05c6f7105861e707348c83378952790e2062b0b94ceaace76a15d4a272bde9213ff94393f58fb90b41c8e32d67dcc205332cdab913be6bfb2f2175ef2853edd22ccf1787309d1bb697cee72e87fefeff8b8d513ef089eff191c486c58d2102912bae992eb946cad19dcb2a447dd1aa7658f5a5387d526aa889522d5af4fcde299c68fc3e86de4da0125c82c20dedddf00e67f8a4102ad3621fd08309d0fb102e5d5ad9c907d70666ff64f8dc076ee9b04ae0316776d8b8a0e0ecbcaba1fa9a936ea10582791854ea43112c7d62279b0b7013e3bcbef0984a41e36a7a054a380470e386fd992a2068b4607e6ad4dd33b684a9b0092fcfd5b6fa12467c42dd
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (ConnectionResetError), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 中国民生银行 ===========
+calling: ./robot-detect --csv -p 443 nper.cmbc.com.cn
+retcode: 1
+Scanning host nper.cmbc.com.cn ip 124.127.181.97 port 443
+
+RSA N: 0xb17fd86b8c8e8cc6b9460bd786d95e1efaab159d1dd7ad0b17c1cba9de4b76075c63d38db38f3cd15c8a737aad1195b9586738c6f2c6fe726dfbd3be6ade25e250fb888860ed7b6ce27809ed37377917fe90c0f110ed6a638df78dbca08abbb272637133dfed3050159d452d0a75359c42bd85a9618163f947e182cba824f3206cada889f97e834b70706e1bfe89591b8fd5bdd2ed949d1a01a6489304beb79622772c957e14a610c4387171f8d1e79fcba0f8775329e16452005a936f4ac02e1f5742c199e78ea3c65590a8cd64279dec80c40e80a4161fafd282440802d7a48c53b0e4178a40311366ce16f4010d917e717258c3e2e47a57984eaa4e738c05
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 40 of length 14), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 浙商银行 ===========
+calling: ./robot-detect --csv -p 443 perbank.czbank.com
+retcode: 1
+Scanning host perbank.czbank.com ip 60.191.8.56 port 443
+
+RSA N: 0xf24374cb0292ca72049a028df2efdeb54ef8ded0021d03aba6f8b8a745533d8c68760be5a9759c471adf73f1f439a4d8cfa5ab5bd4b6106e5e9238cebf4db85c0e1e89511cd54bd75a9396538874ba13bf07cc1478a2c15fefc7bd4d626eda110a0f0ef3bd6994a1fb6e8bda67f292f9834a3b2be77dc619cd6655113e6ddd3b1866a9795268324226cda8415edd16dff39c3a0049f7ed7d53d847484f843a3e2ce23b79bfebd722618bb25ad372df49c3498971dfbf029c5f75e64f8601499e9db3975f7e2c356774f999ac967a30ce85328741911f6dcb37d42c40e18cf207c937b7c6d401343180fe33f061fd44af49f1b413a897615a053ff2fd6ed44e0d
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 20 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 平安银行 ===========
+calling: ./robot-detect --csv -p 443 bank.pingan.com.cn
+retcode: 1
+Scanning host bank.pingan.com.cn ip 202.69.23.236 port 443
+
+RSA N: 0x9e73cb8163c67d81003130c298729c077b6cd5b01d48bcde0ff66aba991faaaed885ca498efffee2d330e6fb470dc2e5bc81472775b38493cf85d4dc44f6f7e28cffbbcc5dabf8f7bc8f7f5cc79f2cf79718b2e491c1bcdcf199302bba0c4ebad64a0b2cc7d81fd38c23a484cfe8a09b2d5e32780b3ce238e13af6e6e40352881e300f36b621ba78b11204eca047ffac6b86c800a39b9d431ae90f4c2cf474de4bf69841a19cd05521c94ecaee6cd1ebea6bca9de176d91d58f7557937d5d52a3a041fe69da9bbcc706ca079b27380661199980bff834c3678190fee68183bd912f1099a1a4e651038e784d4f7e9632708bc1ad69fd19445b8e1d7d0e0588c07
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 20 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 上海银行 ===========
+calling: ./robot-detect --csv -p 443 ebanks.bankofshanghai.com
+retcode: 1
+Scanning host ebanks.bankofshanghai.com ip 222.66.10.162 port 443
+
+RSA N: 0xb7b8955e25c9fa3c7fe07d8ee7689f5d9480c2bf8ff872bf4feb670638a66bc4e1391d00185ce6fe406f7ef73190879f5a377a3bcba944606a4f9412d65670b2d3b072aecb20ae893715a81793da4baefc7fce935060887d8542be9d7bdbcf3d815f3951c1a486fabd3a193d8a476267cb1d601042a0d150454c973d84e46c6e1898ca34da51dbd3726b77ed1a122288fcc420eb00483a70e4688318632dc6d240114a7b4a4965f698a9b4dce6bc7b20eb9d5435895d9396e489742e0b5fe0f6861673a1aad0988d32405e54554be9dee41aeb6500c4c9b19242fb29f29dfadf142359e510f9f3e14aaf239ac7ade5a4a11b7f27193b5f83fbe83b141625049f
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 20 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 台州银行 ===========
+calling: ./robot-detect --csv -p 443 ebank.tzbank.com
+retcode: 1
+Scanning host ebank.tzbank.com ip 122.226.171.71 port 443
+
+RSA N: 0xc673389b61dbc2e6fca7958aadd166f98212db38a50e4d4a936758bac110b1aafbafe564040d774586dbdfed47803a7ca6e228a2942a4d11536efbae8f1153091bfcd9cdb7a8771c25096b2da082f38275afe6c6e831e80c410cd6b124ef3551f76f343e07b8e48877a67c75a240e1081999b3c3eb7c88fda44c3a07bbb798bcac07bb215102bcf43aceb385c3553ecc42980de554415dbd3d4b990a57976c9daa1c306f88c6056c341bab855937f271c870d1adc31a41928ad581b366a117990792d54978a8c40619e723140279f0e2bb4976ed238b5d6fe7121fe651757b62f9128b0c4540e5c1aa7bb4dc3da89c0004562d6adae2ed478f6b2db9cc0e978d
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 20 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 泰安银行 ===========
+calling: ./robot-detect --csv -p 443 ebank.taccb.com.cn
+retcode: 1
+Scanning host ebank.taccb.com.cn ip 222.173.8.202 port 443
+
+RSA N: 0xc2632824546a2ab772c96cd21e343a9e1b6f97a4f3032ba161f071da881c4eb0e4cacebf3d2ec8d8d18bcf2f5d399cd34bde2558506f4aac12473c0a63b577c3965926c090681c6d37272a99420599733ee67cbc80cbdfae8fffcc3491460195e6203512fe49bee2a25d88874a904ef29bfaca1187c135e2b32e00219d2ef3a9f5d278e29bd97107eea827894bc42bee6d449fce1b385428989d12983a2808de9c4579e7c9d091321aa33ec474439a226aee59232058191e749442f7b235bb09ed4c57df3d6d841f9c9219b4b34206822467a88329e0e97c28f6f5c8dcd6b42193cd6c2387633a2b5b71687cb3a8b5d4f4c331b0f5c5d35a2379c2488e158d4f
+
+RSA e: 0x10001
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (Timeout waiting for alert), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
+============== 微众银行 ===========
+calling: ./robot-detect --csv -p 443 www.webank.com
+retcode: 1
+Scanning host www.webank.com ip 211.159.212.166 port 443
+
+RSA N: 0xf3f988add221bb763953da1a615b626abd1e11be3e82b254ae67b7c5a976b2428d3e840deeda55e7f7c34d65966240116a1422f4f09fc92a945439f359217d59a50c778b5496824c464c2fc4ebfc18bb9efb0b4eb462d9300f50ecb81ff21e3d47ead76ae5e555f583a1266c01061b48b0bd7cf3523300533129e475e5e27e04711b4dd35fd824cfb36a0cc50bcfcfb443f94e2e312d6e42d2d9af5ebf41f73dc65640823908bb6055cfd987f4fbbaf7fa5f794a41be9aa7076e2b161ea0e322d4bdcb4ce18a93cd77ab4ac6c1e194b787b426fb20654c14f17d7f9a1784e96d3d619515e91c0d88bfdbabfa00f829ea29735e27de8fbad30009b97bc1c0e007
+
+RSA e: 0x3
+
+Modulus size: 2048 bits, 256 bytes
+
+Identical results (TLS alert 20 of length 7), retrying with changed messageflow
+
+Identical results (Timeout waiting for alert), no working oracle found
+
+NOT VULNERABLE!
+
