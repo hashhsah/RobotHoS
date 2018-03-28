@@ -21,6 +21,8 @@ def parse_csv_line(ln):
 headers = ['Name', 'Host', 'Port', 'IP', 'Flag', 'Verdict']
 all_results = []
 with open('banks.csv') as f:
+    subprocess.run('date', shell=True)
+
     for row in csv.reader(f):
         host, port, name = row
 
